@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
-    TextView textview_first;
-    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,24 +39,10 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        textview_first = findViewById(R.id.textview_first);
-        button = findViewById(R.id.click_me_animate);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//                YoYo.with(Techniques.Bounce).duration(1000).repeat(1).playOn(textview_first);
-                YoYo.with(Techniques.Tada)
-                        .duration(700)
-                        .repeat(5)
-                        .playOn(findViewById(R.id.textview_first));
-            }
-        });
-
-//        YoYo.YoYoString yoYoString = YoYo.with(Techniques.SlideInRight).duration(1500).repeat(2).playOn(textView);
-
-
+        YoYo.with(Techniques.SlideOutRight)
+            .duration(1500)
+            .repeat(-1)
+            .playOn(findViewById(R.id.textview_first));
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -24,4 +24,48 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_second" />
+
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="460dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Nama"
+                android:padding="5dp"
+                />
+            <TextView
+                android:text=":"
+                />
+            <TextView
+                android:text="ABDUL JABBAR"
+                android:layout_column="2"
+                android:paddingLeft="5dp"
+                />
+        </TableRow>>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Panggilan"
+                android:padding="5dp"
+                />
+            <TextView
+                android:text=":"
+                />
+            <TextView
+                android:text="Aabe"
+                android:layout_column="2"
+                android:paddingLeft="5dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
